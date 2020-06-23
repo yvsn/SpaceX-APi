@@ -10,28 +10,26 @@
 			<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
 		 	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel="stylesheet" />
 			<script src="scripts/main.js" defer></script>
-
 </head>
 <body>
-<!--Introduction-->
 <section class= "introsection">
 	<div class= "introduction">
-		<h1>Ready to travel home?</h1>
+		<h1>Let's Get You Home</h1>
 	</div>
 </section>
 <section class= "mapbox">
+		<h2>Great Landing Spots</h2>
 <div id='map'></div>
 </section>
-<section class= "weather">
-<article id="weather"></article>
+<section class= "openweather">
+<h2>Check the Weather</h2>
 <form>
-	<fieldset>
-		<legend>Get current weather</legend>
-		<label for="city">City:</label>
-		<input type="text" name="city" id="city" />
+	<div>
+		<input type="text" name="city" placeholder= "City" id="inputCity" />
 		<input type="button" id="getWeather" value="get current weather" />
-	</fieldset>
+	</div>
 </form>
+	<div id="weather"></div>
 </section>
 </body>
 </html>

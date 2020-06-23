@@ -40,8 +40,8 @@ h2{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 }
-
 #map{
 	width: 600px;
 	height: 400px;
@@ -58,5 +58,43 @@ h2{
 	.mapboxgl-popup-content {
 	  text-align: center;
 	  font-family: 'Open Sans', sans-serif;
-		font-size: 15px;
+		font-size: 10px;
 	}
+
+	.openweather{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	#weather {
+		font-family: 'Open Sans', sans-serif;
+	  font-size: 2rem;
+		background-color: white;
+		width: 50%;
+		text-align: center;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	input{
+		height:5vh;
+		width: auto;
+		font-size: 1.2em;
+	}
+
+	#getWeather{
+		margin: 0;
+		padding: 0;
+		height: 5vh;
+		width: auto;
+		font-size: 1.2em;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+.label{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2rem;
+}
