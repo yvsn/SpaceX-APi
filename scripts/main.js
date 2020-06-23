@@ -1,9 +1,9 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoieWFubmlrdnNuIiwiYSI6ImNrYnJ1NjV5cTI2azAycXA5MDZidjgwODcifQ.88UZ_E6najB1gHH5pfYDQw';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-    center: [-80.6026,28.6050], // starting position [lng, lat]
-    zoom: 7 // starting zoom
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-80.6026,28.6050], //
+    zoom: 7
 });
 
 var geojson = {
@@ -60,7 +60,6 @@ geojson.features.forEach(function(marker) {
 });
 
 
-
 function getAPIdata() {
 
 	var url = 'https://api.openweathermap.org/data/2.5/weather';
@@ -91,7 +90,6 @@ function getAPIdata() {
 	});
 }
 
-
 function onAPISucces(response) {
 	// get type of weather in string format
 	var description = response.weather[0].description;
@@ -112,5 +110,12 @@ function onAPIError(error) {
 
 // init data stream
 document.getElementById('getWeather').onclick = function(){
+   var weather=document.getElementById("weather");
+    if (weather.style.display === "none") {
+      weather.style.display = "block";
+}
+        else {
+          weather.style.display = "block";
+}
 	getAPIdata();
 };

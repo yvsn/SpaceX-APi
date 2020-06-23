@@ -17,15 +17,15 @@ h1{
 	color: white;
 }
 h2{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Orbitron', sans-serif;
 	font-weight: normal;
 	margin: 0;
 	padding-top:20px;
-	font-size: 3em;
+	font-size: 2em;
 	color: white;
 }
 .introsection{
-	margin-top: 6rem;
+	margin-top: 4rem;
 	padding-bottom: 4rem;
 	width: 100%;
 	display: flex;
@@ -33,14 +33,16 @@ h2{
 	justify-content: center;
 
 }
-.introduction h1{
-	padding-bottom: 0.3rem;
-}
+
 .mapbox{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	margin-bottom: 4rem;
+}
+.mapbox h2{
+	margin-bottom: 1rem;
 }
 #map{
 	width: 600px;
@@ -54,24 +56,30 @@ h2{
 	  border-radius: 50%;
 	  cursor: pointer;
 	}
-
 	.mapboxgl-popup-content {
 	  text-align: center;
 	  font-family: 'Open Sans', sans-serif;
-		font-size: 10px;
+	  font-size: 1.2em;
 	}
-
 	.openweather{
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
+			margin-bottom: 4rem;
+	}
+	.openweather h2{
+		margin-bottom: 1rem;
 	}
 	#weather {
+		display: none;
+		margin-top: 1rem;
+		padding: 20px;
 		font-family: 'Open Sans', sans-serif;
-	  font-size: 2rem;
+	  font-size: 1.2em;
 		background-color: white;
-		width: 50%;
+		width: 40%;
+		border-radius: 50px;
 		text-align: center;
 	}
 
@@ -87,14 +95,9 @@ h2{
 
 	#getWeather{
 		margin: 0;
-		padding: 0;
 		height: 5vh;
 		width: auto;
 		font-size: 1.2em;
-		margin: 4px 2px;
+		margin-left: 20px;
 		cursor: pointer;
 	}
-.label{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 2rem;
-}
