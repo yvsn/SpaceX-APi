@@ -3,7 +3,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
     center: [-80.6026,28.6050], //
-    zoom: 7
+    zoom: 5
 });
 
 var geojson = {
